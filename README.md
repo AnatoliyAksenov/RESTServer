@@ -10,7 +10,8 @@ REST API сервер обеспечивает простой и удобный 
 Развертывание REST API сервера
 ----
 
-Для работы REST сервера необходимо поднять ноду сети Ethereum. Для простоты мы будем использовать Ropsten Test NET. Для поднятия ноды выполним команду:
+Для работы REST сервера необходимо поднять ноду сети Ethereum. Для простоты мы будем использовать Ropsten Test NET.
+Для поднятия ноды выполним команду:
 
 ```
 geth --light --rpc --rpcaddr 0.0.0.0 --rpcport 8545 --rpcapi "admin,web3,eth,network,person" --testnet
@@ -52,6 +53,7 @@ $rm server.key.org
 > Внимательно отнеситесь к безопасности ваших ключей и сертификатов!
 > Данный код не обеспечивает должной безопасности.
 
+Код смарт-кондракта можно взять тут: [identify.sol](https://gist.githubusercontent.com/AnatoliyAksenov/a8675b9efee8c720bbbdd57ca31de151/raw/5dd470799b6d1ff6c6344e92ef64993b256c98d0/identify.sol)
 Устанавливаем переменные окруженя для запуска сервера:
 ```
 $export CONTRACT_ADDRESS=0xbd158c546e931c0e5b645825dfe4462a65b3fdcd
